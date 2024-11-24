@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="com.example.project2_.CalculatorController"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10"
+      alignment="CENTER"
+      style="-fx-padding: 20;">
+
+    <TextField fx:id="display"
+               editable="false"
+               style="-fx-font-size: 20px;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <Button text="7" onAction="#handleDigit" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button text="8" onAction="#handleDigit" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button text="9" onAction="#handleDigit" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button text="/" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+        <Button text="4" onAction="#handleDigit" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button text="5" onAction="#handleDigit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button text="6" onAction="#handleDigit" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button text="*" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+        <Button text="1" onAction="#handleDigit" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button text="2" onAction="#handleDigit" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button text="3" onAction="#handleDigit" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button text="-" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+        <Button text="0" onAction="#handleDigit" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button text="." onAction="#handleDecimal" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button text="=" onAction="#handleEquals" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Button text="+" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+        <Button text="C" onAction="#handleClear" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2" />
+        <Button text="+/-" onAction="#handleNegate" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.columnSpan="2" />
+    </GridPane>
+</VBox>
+
+
